@@ -158,7 +158,7 @@ function getScore(cardArray) {
     for (let i = 0; i < cardArray.length; i++) {
         let card = cardArray[i];
         if (card.value == 'Ace') {
-            if ((score + 11) > 21) {
+            if (score >= 11) {
                 score += 1;
             } else {
                 score += 11;
