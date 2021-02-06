@@ -117,7 +117,7 @@ function checkForEndOfGame() {
 
     if (gameOver) {
 
-        while (dealerScore < 17 || dealerScore <= playerScore) {
+        while ((dealerScore < 17 || dealerScore <= playerScore) && dealerScore < 21) {
             dealerCards.push(getNextCard());
             updateScores();
         }
