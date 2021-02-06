@@ -59,7 +59,9 @@ stayButton.addEventListener('click', function () {
     showStatus();
 });
 
-//Initializer
+/**
+ * Initialize global variables
+ */
 function init() {
     gameStart = true;
     gameOver = false;
@@ -71,10 +73,10 @@ function init() {
 
 }
 
-//Functions
 /**
  * Creates a deck of cards
- * @return array 
+ * 
+ * @returns Array 
  */
 function createDeck() {
     let deck = []
@@ -93,7 +95,7 @@ function createDeck() {
 /**
  * Shuffle the deck of cards
  * 
- * @param {Array} deck 
+ * @param Array deck 
  */
 function shuffleDeck(deck) {
     for (let i = 0; i < 3000; i++) {
@@ -148,8 +150,8 @@ function checkForEndOfGame() {
 /**
  * Collect score from current player cards
  * 
- * @param {Array} cardArray 
- * @return Int
+ * @param Array cardArray 
+ * @returns Int
  */
 function getScore(cardArray) {
     let score = 0;
@@ -236,6 +238,8 @@ function showStatus() {
 
 /**
  * Get next card in deck
+ * 
+ * @returns Object
  */
 function getNextCard() {
     return deck.shift();
@@ -244,7 +248,7 @@ function getNextCard() {
 /**
  * Convert card values into a representable string
  * 
- * @param {Object} card 
+ * @param Object card 
  * @returns String
  */
 function getCardString(card) {
@@ -255,7 +259,7 @@ function getCardString(card) {
 /**
  * Convert card value into int
  * 
- * @param {Object} card 
+ * @param Object card 
  * @returns int
  */
 function getCardNumericValue(card) {
@@ -285,7 +289,7 @@ function getCardNumericValue(card) {
 /**
  * Convert card values into Unicode string representation of a deck card
  * 
- * @param {Object} card 
+ * @param Object card 
  * @returns String
  */
 function getCardSymbol(card) {
@@ -305,7 +309,7 @@ function getCardSymbol(card) {
 /**
  * Get Unicode string of deck card symbol
  * 
- * @param {String} value 
+ * @param String value 
  * @returns String
  */
 function getHeartSymbol(value) {
@@ -343,7 +347,7 @@ function getHeartSymbol(value) {
 /**
  * Get Unicode string of deck card symbol
  * 
- * @param {String} value 
+ * @param String value 
  * @returns String
  */
 function getSpadeSymbol(value) {
@@ -380,7 +384,7 @@ function getSpadeSymbol(value) {
 /**
  * Get Unicode string of deck card symbol
  * 
- * @param {String} value 
+ * @param String value 
  * @returns String
  */
 function getDiamondSymbol(value) {
@@ -417,7 +421,7 @@ function getDiamondSymbol(value) {
 /**
  * Get Unicode string of deck card symbol
  * 
- * @param {String} value 
+ * @param String value 
  * @returns String
  */
 function getClubSymbol(value) {
