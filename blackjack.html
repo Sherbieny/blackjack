@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+  <body>
+    <h1>Blackjack</h1>    
+    <table>
+        <caption>Overall Score</caption>
+        <tr>
+            <th>
+                Wins
+            </th>
+            <th>
+                Losses
+            </th>
+        </tr>
+        <tr>
+            <td id="overall-wins">0</td>
+            <td id="overall-losses">0</td>
+        </tr>
+    </table>       
+    <span id="dealer-text-area"></span>
+    <div class="scrollable">
+        <span id="dealer-symbol-area"></span>
+    </div>    
+    <hr>
+    <span id="player-text-area"></span>
+    <div class="scrollable">
+        <span id="player-symbol-area"></span>
+    </div>
+    <br>
+    <span id="result-text-area"></span>
+    <br><br>
+    <button id="new-game-button">New Game!</button>
+    <button id="hit-button">Hit!</button>
+    <button id="stay-button">Stay</button>
+    
+    <script src="game.js"></script>
+  </body>
+
+</html>

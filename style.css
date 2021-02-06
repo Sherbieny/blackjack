@@ -1,0 +1,40 @@
+body{
+  text-align: center;
+}
+
+table, th, td, caption {
+    border: 1px solid black;
+    padding: 5px;
+  }
+table {
+  border-spacing: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+}
+
+caption {
+  background-color: lightgray;
+}
+
+#text-area{
+    font-weight: bold;
+}
+
+#player-symbol-area, #dealer-symbol-area {
+    font-size: 8em;
+}
+#result-text-area{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.scrollable {
+  overflow:auto;
+  max-width: 500px;
+  max-height: 500px;
+  margin-left:auto;
+  margin-right:auto;
+  
+  white-space: nowrap;
+}
