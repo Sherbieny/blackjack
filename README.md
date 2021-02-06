@@ -9,6 +9,7 @@
 
 #### Features
 - Blackjack game
+- Keeps overall score
 - Card Deck Images
 
 #### Files
