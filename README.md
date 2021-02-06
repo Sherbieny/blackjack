@@ -1,6 +1,8 @@
 # Blackjack
 #### Made with Javascript
 
+[Play it here](https://sherbo-blackjack.herokuapp.com/).
+
 #### Tools used
 - VS code
 - [Dillinger](https://dillinger.io/)
