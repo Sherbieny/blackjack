@@ -116,12 +116,18 @@ function checkForEndOfGame() {
     updateScores();
 
     if (gameOver) {
-        while (dealerScore < playerScore &&
-            playerScore <= 21 &&
-            dealerScore <= 21) {
+
+        while (dealerScore < 17 || dealerScore <= playerScore) {
             dealerCards.push(getNextCard());
             updateScores();
         }
+
+        // while (dealerScore < playerScore &&
+        //     playerScore <= 21 &&
+        //     dealerScore < 17) {
+        //     dealerCards.push(getNextCard());
+        //     updateScores();
+        // }
     }
 
     if (playerScore > 21) {
