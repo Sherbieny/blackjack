@@ -155,18 +155,27 @@ function checkForEndOfGame() {
  */
 function getScore(cardArray) {
     let score = 0;
+    let aceCount = 0;
     for (let i = 0; i < cardArray.length; i++) {
         let card = cardArray[i];
         if (card.value == 'Ace') {
-            if (score >= 11) {
-                score += 1;
-            } else {
-                score += 11;
-            }
+            score += 11;
+            aceCount++;
         } else {
             score += getCardNumericValue(card);
         }
     }
+
+    //Check Ace's count and covert 11 into 1 until the score is below 21
+    while (aceCount > 0) {
+        if (score > 21) {
+            score -= 10;
+            aceCount--;
+        } else {
+            break;
+        }
+    }
+
     return score;
 }
 
